@@ -1,0 +1,11 @@
+reticulate::py_install(c("pandas", "scikit-learn"))
+reticulate::py_config()
+Install with py -m pip install jupyter
+Install with py -m pip install jupyter
+library(reticulate)
+use_python("D:/python.exe", required = TRUE)
+library(reticulate)
+x
+use_python("D:/python.exe", required = TRUE)
+library(reticulate)
+use_python("D:/python.exe", required = TRUE)

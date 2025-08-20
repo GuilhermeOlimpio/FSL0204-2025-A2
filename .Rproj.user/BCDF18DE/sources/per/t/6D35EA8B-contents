@@ -1,0 +1,907 @@
+---
+title: "Métodos digitais em sociologia"
+author: "Carolina Bueno Stefani, Guilherme Olímpio Fagundes e Glória Carvalho"
+format:
+  revealjs:
+    theme: default
+    self-contained: true
+    preview-links: true
+    incremental: false
+    scrollable: true
+    logo: USP.png
+    footer: "FSL0204            21-22 de agosto de 2025"
+    slide-number: true        # ativa a contagem de slides
+    controls: true            # mostra os controles de navegação
+    progress: true            # mostra barra de progresso
+editor: visual
+bibliography: refs.bib
+date: 2025-08-21
+date-format: "DD-MM-YYYY"
+lang: pt-br
+---
+
+## Sumário {.incremental}
+
+::: incremental
+- Onde estamos nas etapas de uma pesquisa científica?
+- Sociologia digital: teoria e método
+- Nossa cozinha de pesquisa
+:::
+
+# Introdução
+
+## As cinco etapas de pesquisa {.incremental}
+
+Em qualquer pesquisa científica, inclusive a sociológica, cumprimos cinco etapas.
+
+::: incremental
+-   Construção do problema de pesquisa
+
+::: {.fragment .highlight-red}
+-   Coleta e produção de "dados"
+:::
+
+-   Análise e sistematização dos dados produzidos
+-   Interpretação e produção de evidências
+-   Escrita de relatório e divulgação dos resultados
+:::
+
+## Introduzindo a sociologia digital
+
+Até o momento, vimos técnicas de obtenção de dados estruturados (pesquisa por questionário, dados secundários) e não estruturados (observação participante, entrevista, grupo focal). 
+
+São técnicas que, a princípio, podem ser aplicadas face a face. Agora, com o advento do digital, como isso pode potencializar as estratégias de obtenção de dados?
+
+## O advento do digital
+
+Segundo @pasquinelli2023
+
+- "Algoritmos" não são coisa nova.
+- 1850: Revolução Industrial e máquinas
+- 1960: Guerra Fria e ARPANET
+- 2004: WWW 2.0 e computadores pessoais
+- 2008: Smartphones
+- 2012: ImageNet e o retorno da IA.
+
+## Uma palavra sobre sociologia digital
+
+<span style="font-size:80%;">"**Eis porque a sociologia digital talvez não seja um subcampo ou especialidade disciplinar, autônoma e bem delimitada**, mas antes um rol de reflexões que, se há vinte anos estavam circunscritas a questões e problemas específicos, hoje devem ser colocadas no centro de quaisquer trabalhos sociológicos, já que o digital vem se tornando indissociável da vida social no mundo contemporâneo. Se antes o mundo digital poderia ser circunscrito como um fenômeno localizado, **hoje ele inunda todos os domínios da vida humana, digitalizando assim o nosso próprio mundo**, definindo, impactando, modelando ou codeterminando (et cetera, conforme a perspectiva que adotarmos) práticas, processos e estruturas sociais"  [@cordeiro2023, p. 16] </span>
+
+## Uma palavra sobre sociologia digital
+
+::: {.incremental}
+<span style="font-size:80%;">Segundo @cordeiro2023 [p. 17], compreendemos como **“sociologia digital”** àqueles trabalhos que:</span>
+
+- <span style="font-size:80%;">Discutem conceitualmente as novas configurações do mundo contemporâneo;</span>
+- <span style="font-size:80%;">Lidam com epistemologias e éticas relativas ao uso de dados e instrumentos digitais;</span>
+- <span style="font-size:80%;">Tomam por objeto a digitalização da vida.</span>
+
+::: {.fragment .highlight-red}
+- <span style="font-size:80%;">Mobilizam o digital como métodos, técnicas e materiais de pesquisa;</span>
+:::
+
+:::
+
+## Uma palavra sobre sociologia digital
+
+O objetivo da aula é apresentar a vocês uma das diferentes técnicas computacionais: **a raspagem de dados (*web scraping*)**. 
+
+Para isso, apresentamos um estudo de caso: um levantamento realizado em 2023 sobre grupos de IA.
+
+A ideia é mostrar algumas possibilidade de incluir métodos e técnicas digitais de pesquisa no estudo de vocês.
+
+
+## "Mas precisamos saber programar?"
+
+É importante frisar que saber programar é um diferencial, mas não é uma necessidade.
+
+Com os grandes modelos de linguagem (ChatGPT, DeepSeek etc), uma pessoa leiga pode se familiarizar com esses métodos digitais.
+
+Como cientistas sociais, queremos aprender a usar o que elas têm a oferecer para resolver os **nossos** problemas, e não necessariamente nos tornarmos programadores fluentes.
+
+
+# A cozinha de pesquisa
+
+# Etapa 1. Construindo o objeto de pesquisa
+
+## De um problema social para um objeto sociológico
+
+Como viram com @lemieux2015, geralmente **problematizamos** um fenômeno social para construir um objeto de pesquisa.
+
+**O objeto não é dado. Ele é construído.**
+
+No nosso caso: a emergência de sistemas algorítmicos inteligentes conhecidos como tecnologias de Inteligência Artificial (IA).
+
+## IA como fenômeno social
+
+Nos últimos cinco anos, as IAs se proliferaram, chegando ao público por meio dos grandes modelos de linguagem (LLMs) mais acessíveis ao público em geral.
+
+Basta jogar "IA" nas ferramentas de buscas, que encontramos notícias diárias a seu respeito.
+
+![](ICL.png)
+
+![](Valor.png)
+
+![](UOL.png)
+
+## Definir a IA
+
+@boden1996, "uma classe de tecnologia de alto processamento via automatização e predição... geralmente, com aprendizagem de máquina e alimentada por grandes volumes de dados"
+
+Para @esposito2022 [p. xiii],
+
+"A questão não é explicar, mas **predizer**; não é identificar relações causais, mas encontrar **correlações**; não é gerenciar a incerteza \[do futuro\], mas descobrir quais seriam seus **padrões e estruturas**"
+
+## IA como fenômeno social
+
+Os sistemas inteligentes estão presentes em várias dimensões da vida social (educação, mundo do trabalho, cultura etc)
+
+Isso acarreta em um aumento significativo, por parte de países, em capacitar seus recursos humanos relativos ao campo da IA. **Mas e o Brasil nisso tudo?**
+
+## O que já foi dito a respeito?
+
+O primeiro passo de qualquer pesquisa é levantar o que já foi dito a respeito. No nosso caso, **o que já foi escrito sobre IA, tecnologias digitais, conhecimento científico, recursos humanos qualificados, desenvolvimento econômico?**
+
+Para @pasquinelli2023, as ciências humanas foram essenciais para conceber a IA (e.g. o economista Hayek e suas trocas com engenheiros na época) 
+
+## Quais as lacunas da literatura?
+
+- Estudos sobre humanidades e ciências sociais aplicadas eram, até então, escassos.
+- Em geral, os estudos versavam sobre o "código na cultura", mas não a "cultura no código", como @airoldi2021 aponta
+- Com uma exceção [@costa2021], não havia mapeamentos similares sobre a interface entre "IA", "conhecimento científico" e "Brasil"
+- Mapeamentos parecem sub-representar as humanidades. 
+
+## Questão sociológica de pesquisa
+
+Tendo em vista suprir uma lacuna teórica e abrir novos caminhos (originais) de pesquisa, nos questionamos:
+
+**Como os grupos de pesquisa brasileiros em Humanidades e Ciências Sociais Aplicadas (HCSA) pesquisam Inteligência Artificial e tecnologias digitais em 2022?**
+
+## Hipótese
+
+Geralmente, um levantamento é exploratório. É um "acelerador de hipóteses", à medida que seus resultados permitem abrir novos horizontes de pesquisa.
+
+Mesmo assim, sempre temos algumas suposições do que vamos encontrar. Uma das hipóteses centrais era de que **os grupos de pesquisa são sub-representados pelos levantamentos já feitos em função de suas especificidades temáticas**.
+
+## Objetivos
+
+O objetivo geral era **mapear** o campo de IA na academia de HCSA no Brasil.
+
+Para isso, precisaríamos:
+
+-   identificar os temas mais investigados pelos grupos pelas suas linhas e descrições de pesquisa,
+-   encontrar padrões na distribuição geográfica, institucional (e.g. categoria administrativa) e social (e.g. gênero)
+
+Em resumo, onde estão os grupos, o que pesquisam, quais são eles e quais são seus perfis.
+
+## Referencial empírico
+
+::: panel-tabset
+### Unidade de análise
+
+Nossa população são os grupos de pesquisa registrados no Diretório de Grupos de Pesquisa do Conselho Nacional de Desenvolvimento Científico e Tecnológico (DGP/CNPq), cadastrados até outubro de 2022, que tenham a IA como algum de seus objetos.
+
+Para isso, usamos uma listagem inicial de **31 descritores** em português e inglês fornecidos pelo C4AI/USP. Eles foram complementados com um levantamento bibliográfico (e.g. "cultura algorítmica", "humanidades digitais" etc).
+
+Isso resultou em um total de 1547 grupos encontrados, retirando duplicatas. **Quando olhamos apenas para os HCSA, temos apenas 196 grupos**. Houve uma facilidade do DGP que nos permitiu baixar os grupos em uma planilha Excel. Com essa listagem, alimentamos o buscador da raspagem.
+
+### Descritores
+
+| Descritivo                              | Total | Duplicados | Resultado |
+|-----------------------------------------|-------|------------|-----------|
+| inteligência aplicada                   | 98    | 0          | 98        |
+| Inteligência artificial                 | 765   | 78         | 687       |
+| artificial intelligence                 | 29    | 16         | 13        |
+| artificial inteligente                  | 37    | 37         | 0         |
+| Agente de máquina                       | 251   | 110        | 141       |
+| Agente de máquinas                      | 29    | 29         | 0         |
+| agentes inteligentes                    | 31    | 17         | 14        |
+| aprendizado de máquina                  | 0     | 0          | 0         |
+| aprendizado de máquinas                 | 0     | 0          | 0         |
+| aprendizado por máquina (sem resultado) | 0     | 0          | 0         |
+| aprendizado profundo                    | 20    | 17         | 3         |
+| aprendizado por reforco                 | 13    | 11         | 2         |
+| automacao inteligente                   | 31    | 19         | 12        |
+| computational intelligence              | 4     | 1          | 3         |
+| deep learning                           | 108   | 76         | 32        |
+| agents machine learning                 | 0     | 0          | 0         |
+| máquinas de aprendizado                 | 1     | 1          | 0         |
+| redes neurais                           | 299   | 167        | 132       |
+| reinforcement learning                  | 5     | 5          | 0         |
+| robô inteligente                        | 33    | 20         | 13        |
+| robos inteligentes                      | 3     | 3          | 0         |
+| robótica inteligente                    | 28    | 27         | 1         |
+| robótica móvel inteligente              | 4     | 4          | 0         |
+| sistemas autonomos inteligentes         | 5     | 5          | 0         |
+| sistemas baseados em aprendizado        | 1     | 1          | 0         |
+| sistemas especialistas inteligentes     | 3     | 3          | 0         |
+| sistemas hibridos inteligentes          | 2     | 2          | 0         |
+| sistema inteligente                     | 302   | 188        | 114       |
+| sistemas inteligentes                   | 260   | 260        | 0         |
+| algorithms                              | 8     | 4          | 4         |
+| algoritmos                              | 378   | 165        | 213       |
+| Humanidades digitais                    | 49    | 13         | 36        |
+| Humanidade digital                      | 12    | 1          | 11        |
+| Natural Language Processing             | 7     | 4          | 3         |
+| Processamento de Linguagem Natural      | 54    | 39         | 15        |
+| ética algorítmica                       | 1     | 0          | 1         |
+| engenharia da educação                  | 7     | 2          | 5         |
+| inteligência artificial educação        | 22    | 15         | 7         |
+| interação humano máquina                | 2     | 0          | 2         |
+| cultura algorítmica                     | 2     | 0          | 2         |
+:::
+
+# Etapa 2. Coleta e produção de "dados"
+
+## E agora?
+
+Com a pesquisa desenhada, podemos encontrar maneiras de cumprir com os objetivos específicos, dando um caminho para verificarmos nossa hipótese e chegarmos a uma resposta à pergunta de pesquisa.
+
+Feito o levantamento bibliográfico, agora era preciso descobrir os temas e a composição dos grupos de IA, **o que demandaria muito tempo da equipe de pesquisa se fôssemos fazer manualmente.**
+
+Por isso, recorremos à raspagem de dados (ou *web scraping*) do DGP/CNPq.
+
+
+## Web scraping
+
+**O que é?** É uma ferramenta computacional que automatiza a obtenção de dados digitais a partir da estrutura de um site-alvo, que podem ser redes sociais, repositórios, sites em geral que possuem alguma estrutura. 
+
+Vejamos a estrutura do [site do DGP/CNPq](https://lattes.cnpq.br/web/dgp){preview-link="true"}.
+
+## Web scraping
+
+**Por quê?** Os objetivos podem ser muitos, mas geralmente usamos raspagem quando temos um volume muito grande de dados para realizarmos a pesquisa, tornando-se disponível apenas com o advento do digital e das ciências sociais computacionais, ver @cordeiro2023
+
+## Ética de pesquisa
+
+Temos que tomar alguns cuidados quando levamos adiante a raspagem de dados:
+
+-   Atentar-se à Lei Geral de Proteção de Dados (LGDP), especialmente **privacidade**, **anonimização** e **armazenamento** dos dados.
+
+-   Verificar os termos de uso das plataformas raspadas (e.g. LinkedIn)
+
+-   Prestar atenção em possíveis direitos autorais e se há algum risco aos envolvidos.
+
+É preciso ter **vigilância epistemológica**.
+
+## E como fazer?
+
+O primeiro passo é encontrar algum ambiente de programação, as conhecidas IDEs. O [Google Colab](https://colab.google/) é uma boa porta de entrada: é usada no navegador, possui suporte do Gemini e é intuitivo.
+
+Mas há outros: Visual Studio, Anaconda, Spider, RStudio, etc;
+
+## Antes, veja o site
+
+Clique com o botão direito ou aperte F12 para abrir o inspecionar elemento. Clicando na seta que se encontra no canto superior esquerdo, que lhe permite investigar qual classe pertence cada objeto do site.
+
+![](Inspecionar.png){width="5000"}
+
+## E como fazer?
+
+::: panel-tabset
+### Os pacotes
+
+Há muitas maneiras de se fazer raspagem de dados digitais. H
+
+No nosso caso, recorremos a algumas bibliotecas específicas da linguagem Python:
+
+-   Selenium
+-   Requests
+-   BeautifulSoup
+-   Pandas
+-   Pickle
+
+### Código
+
+``` python
+
+import pytest
+import time
+import json
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+import requests
+import pandas as pd
+from bs4 import BeautifulSoup
+import pickle
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="bs4")
+```
+:::
+
+
+## O que foi coletado?
+
+::: panel-tabset
+### Dados obtidos
+
+Coletamos a informação sobre
+
+-   Instituição e sua respectiva categoria administrativa,
+-   Localidade,
+-   Título,
+-   Nomes de líderes, sub-líderes, pesquisadores e estudantes,
+-   Área do líder, área e subárea do grupo
+-   Texto de repercussão (descrição)
+
+Com isso, obtemos 7741 linhas de pesquisa, 18181 pesquisadores e 31999 estudantes associados.
+
+### Código
+
+``` {.python code-line-numbers="|1-10| 11-12| 13-14"}
+# Função para abrir página em função do tempo de espera
+def wait_for_window(driver, vars, timeout = 2):
+    time.sleep(round(timeout / 1000))
+    wh_now = driver.window_handles
+    wh_then = vars["window_handles"]
+    if len(wh_now) > len(wh_then):
+        return set(wh_now).difference(set(wh_then)).pop()
+    else:
+        return 'Não abriu a página'
+    
+# Cria uma lista e permite inserir os grupos baixados da planilha
+grupos = [] # Insira aqui os nomes dos grupo
+
+# Automação de raspagem:
+output = []   
+
+# Selenium em ação
+for g in grupos:                # Cria um loop
+    driver = webdriver.Chrome() # Usa Selenium para acoplar ao Google Chrome
+    driver.implicitly_wait(10)  # Tempo de espera
+    vars = {}                   # Cria um dicionário vazio
+    driver.get("http://dgp.cnpq.br/dgp/faces/consulta/consulta_parametrizada.jsf")
+    driver.find_element(By.ID, "idFormConsultaParametrizada:idTextoFiltro").click() # Clica!
+    driver.find_element(By.ID, "idFormConsultaParametrizada:idTextoFiltro").send_keys(g)
+    driver.find_element(By.ID, "idFormConsultaParametrizada:campos:1").click()
+    driver.find_element(By.ID, "idFormConsultaParametrizada:campos:2").click()
+    driver.find_element(By.CSS_SELECTOR, "#idFormConsultaParametrizada\\3AidPesquisar > .ui-button-text").click()
+    vars["window_handles"] = driver.window_handles
+
+    driver.find_element(By.ID, "idFormConsultaParametrizada:resultadoDataList:0:idBtnVisualizarEspelhoGrupo").click()
+    vars["win3115"] = wait_for_window(driver, vars, timeout = 3000)
+    driver.switch_to.window(vars["win3115"])
+    driver.execute_script("window.scrollTo(0,306)")
+
+
+    # Raspagem de dados com BeatifulSoup:
+    response = requests.get(driver.current_url)
+    content = response.content
+    site = BeautifulSoup(content, 'html.parser')
+
+    try:
+        repercussao = site.find('div', id="repercussao")
+        paragraph = repercussao.find('p')
+        if paragraph:
+            repercussao_text = paragraph.get_text()
+            print(repercussao_text)
+        else:
+            print('Não há texto de repercussão')
+    except:
+        print('Erro ao obter texto de repercussão')
+             
+    lista = []
+    lista.append(g)
+    lista.append(pd.read_html(response.text))
+    driver.quit()
+    
+    output.append(lista)
+
+if repercussao_text:
+    with open('repercussaotesteout.txt', 'w', encoding='utf-8') as arquivo_texto:
+        arquivo_texto.write("texto de repercussão: ")
+        arquivo_texto.write(repercussao_text)
+        arquivo_texto.write("\n")
+    
+with open('outputtesteout.pkl', 'wb') as arquivo:
+    pickle.dump(output, arquivo)
+
+output
+```
+
+### Output
+
+```         
+O Grupo de Pesquisa "Inteligência Artificial e Sociedade" tem sua base no Centro for Artificial Intelligence (C4AI) da Universidade de São Paulo. O Grupo está voltado para a pesquisa na área de humanidades, com estudos orientados para as políticas públicas em países emergentes. Temas como as Transformações do Trabalho, Emprego, Novas Tecnologias e Competências, Regulação, Ética, Privacidade, Ética Corporativa, Impactos sociais de técnicas Biométricas, Informação e Desinformação, Democracia, Cidades Inteligentes e Relações Homem-Robô.Dada sua característica multidisciplinar e multiinstitucional, Grupo abriga pesquisadores da Sociologia, Ciência Política, Economia, Psicologia, Computação, Medicina, Direito, Comunicação, Robótica. Os trabalhos de pesquisa estão voltados para consolidar a Inteligência Artificial no Brasil e ampliar os laços com centros internacionais relevantes. Como parte do C4AI, o Grupo buscará de modo permanente a sinergia com todas as áreas avançadas da IA. 
+            
+[['Inteligência Artificial e Sociedade',
+  [             Rede de pesquisa                Website/Blog
+   0  Nenhum registro adicionado  Nenhum registro adicionado,
+                              Nome da linha de pesquisa  \
+   0  Comunicação e sociabilidade - Jornalismo, proc...   
+   1  Implicações éticas, sociais e políticas dos si...   
+   2                                    Robótica Social   
+   3                         Transformações do Trabalho   
+   4           Ética, Direito e Inteligência Artificial   
+   
+      Quantidade de Estudantes  Quantidade de Pesquisadores  \
+   0                         1                            2   
+   1                         4                            3   
+   2                         3                            2   
+   3                         8                            2   
+   4                         0                            1   
+   
+                                                  Ações  
+   0  Visualizar espelho da linha de pesquisa$(funct...  
+   1  Visualizar espelho da linha de pesquisa$(funct...  
+   2  Visualizar espelho da linha de pesquisa$(funct...  
+   3  Visualizar espelho da linha de pesquisa$(funct...  
+   4  Visualizar espelho da linha de pesquisa$(funct...  ,
+                            Pesquisadores Titulação máxima Data inclusão  \
+   0                 Alvaro Augusto Comin        Doutorado    07/02/2022   
+   1  Cristina Godoy Bernardo de Oliveira        Doutorado    07/02/2022   
+   2                        Eugênio Bucci        Doutorado    07/02/2022   
+   3          Glauco Antonio Truzzi Arbix        Doutorado    23/07/2020   
+   4              João Paulo Cândia Veiga        Doutorado    07/02/2022   
+   5             Magaly Parreira do Prado        Doutorado    09/02/2022   
+   6                    Marcelo Fantinato        Doutorado    23/02/2022   
+   7     Murillo Marschner Alves de Brito        Doutorado    09/02/2022   
+   8               Sarajane Marques Peres        Doutorado    07/02/2022   
+   
+                                                  Ações  
+   0  Visualizar Currículo Lattes$(function(){PrimeF...  
+   1  Visualizar Currículo Lattes$(function(){PrimeF...  
+   2  Visualizar Currículo Lattes$(function(){PrimeF...  
+   3  Visualizar Currículo Lattes$(function(){PrimeF...  
+   4  Visualizar Currículo Lattes$(function(){PrimeF...  
+   5  Visualizar Currículo Lattes$(function(){PrimeF...  
+   6  Visualizar Currículo Lattes$(function(){PrimeF...  
+   7  Visualizar Currículo Lattes$(function(){PrimeF...  
+   8  Visualizar Currículo Lattes$(function(){PrimeF...  ,
+                               Estudantes          Nível de Treinamento  \
+   0                          André Scerb                      Mestrado   
+   1          Bernardo Martinho Ballardin                      Mestrado   
+   2              Bruno Sanchez de Araujo                     Doutorado   
+   3      Diana Veronica Portugal Churata  Não há formação em andamento   
+   4              Eliana Sanches de Frias                      Mestrado   
+   5          Flora Bueno de Araujo Ariza                     Graduação   
+   6              Gabriela Soares Schmidt                      Mestrado   
+   7           Guilherme Olímpio Fagundes                     Graduação   
+   8          Jonatas Mendonça dos Santos                     Doutorado   
+   9                 Laura Simões Camargo  Não há formação em andamento   
+   10         Marcus Vinicius Santos Repa                     Doutorado   
+   11         Otávio De Paula Albuquerque                     Doutorado   
+   12  Rodrigo Brandão de Andrade e Silva                     Doutorado   
+   13         Thiago de Oliveira Meireles                     Doutorado   
+   
+      Data inclusão                                              Ações  
+   0     24/03/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   1     24/03/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   2     23/02/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   3     23/02/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   4     16/02/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   5     24/03/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   6     24/03/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   7     24/03/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   8     07/02/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   9     07/02/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   10    24/03/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   11    23/02/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   12    07/02/2022  Visualizar Currículo Lattes$(function(){PrimeF...  
+   13    09/02/2022  Visualizar Currículo Lattes$(function(){PrimeF...  ,
+                        Técnicos          Formação acadêmica  \
+   0  Nenhum registro adicionado  Nenhum registro adicionado   
+   
+                   Data inclusão                       Ações  
+   0  Nenhum registro adicionado  Nenhum registro adicionado  ,
+      Colaboradores estrangeiros                        País  \
+   0  Nenhum registro adicionado  Nenhum registro adicionado   
+   
+                   Data inclusão                       Ações  
+   0  Nenhum registro adicionado  Nenhum registro adicionado  ,
+                   Pesquisadores Período de participação no grupo  \
+   0  Nenhum registro adicionado       Nenhum registro adicionado   
+   
+                           Ações  
+   0  Nenhum registro adicionado  ,
+                      Estudantes Período de participação no grupo  \
+   0  Nenhum registro adicionado       Nenhum registro adicionado   
+   
+                           Ações  
+   0  Nenhum registro adicionado  ,
+                          Perfil                 Data início  \
+   0  Nenhum registro adicionado  Nenhum registro adicionado   
+   
+                        Data fim  
+   0  Nenhum registro adicionado  ,
+     Nome da Instituição Parceira                       Sigla  \
+   0   Nenhum registro adicionado  Nenhum registro adicionado   
+   
+                              UF                       Ações  
+   0  Nenhum registro adicionado  Nenhum registro adicionado  ,
+     Formação acadêmica  Pesquisadores  Estudantes  Técnicos  \
+   0          Doutorado              9           6         0   
+   1           Mestrado              0           4         0   
+   2          Graduação              0           1         0   
+   3             Outros              0           3         0   
+   
+      Colaboradores estrangeiros  Total  
+   0                           0     15  
+   1                           0      4  
+   2                           0      1  
+   3                           0      3  ,
+                    Equipamentos                       Ações
+   0  Nenhum registro adicionado  Nenhum registro adicionado,
+                       Softwares                       Ações
+   0  Nenhum registro adicionado  Nenhum registro adicionado,
+      Unnamed: 0                       Itens
+   0         NaN               Identificação
+   1         NaN                    Endereço
+   2         NaN  Repercussões dos trabalhos
+   3         NaN          Linhas de pesquisa
+   4         NaN            Recursos humanos
+   5         NaN           Indicadores de RH]]]
+```
+:::
+
+
+## Raspadores disponíveis
+
+Há raspadores disponíveis quase prontos para usuários poderem usar.
+
+Vale a pena procurar pelo GitHub. Um deles é o raspador do portal de notícias do G1, pelo colega uspiano José A. Soares de Oliveira (hermengardo, no [GitHub](https://github.com/hermengardo/G1_news_scraper/blob/main))
+
+Também existe opções para [Twitter/X](https://github.com/vladkens/twscrape), TikTok, Instagram, YouTube dentre outros, ver @omena2024. 
+
+## Estruturando o banco de dados
+
+É comum que o banco venha bagunçado. Mas não desanime! A raspagem requer que a pessoa que esteja raspando tenha a paciência de fazer várias iterações (idas e vindas) com o código, sempre melhorando-o.
+
+No nosso caso, tivemos muitas duplicatas ou trocas de valores das variáveis (e.g. onde deveria estar "nome do grupo" vinha com o nome do pesquisador). Correções serão sempre necessárias.
+
+# Etapa 3. Análise e sistematização dos dados
+
+## Tratamento do banco de dados
+
+Depois de obter o banco, tivemos o trabalho de verificar inconsistências, corrigir manualmente eventuais erros, bem como condicioná-la para aplicar os instrumentos de análise, como a modelagem de tópicos via Python/Colab e a análise textual via Iramuteq. 
+
+Alguns dos procedimentos foram a **tokenização** e a **lematização**, usando o ChatGPT + Spacy e verificando se não houve alucinação.
+
+## Classificando as observações
+
+Usando a tipologia de @liu2021, duplas de pesquisadores classificaram se os grupos pesquisavam
+
+-   IA como objeto (*n* = 55)
+-   IA como método (*n* = 42)
+-   Ambos (*n* = 33)
+-   Tecnologias digitais (*n* = 66)
+
+Isso é uma tarefa que, com aprendizagem de máquina, poderia ser feita. Mas por serem apenas 196 grupos para 6 estudantes de IC, a classificação foi manual.
+
+## Banco de dados tratado
+
+![](Banco.png)
+
+## Modelagem de tópicos
+
+::: panel-tabset
+
+### O que é?
+
+Os métodos digitais não foram unicamente usados para a coleta, mas também para a análise.
+
+Recorremos à **modelagem de tópicos** para explorar os tópicos mais presentes e similares dos repertórios e linhas de pesquisa. A ideia é verificar como se formam *clusters* de grupos a partir do que pesquisam.
+
+Esse instrumento de Processamento de Linguagem Natural (PLN) possui diferentes modelos. O mais comum é o LDA, mas usamos CorEx. Hoje, há outros modelos, como a modelagem estrutural de tópicos (STM), que possui maior facilidade para analisar grandes volumes de dados.
+
+### Código
+
+``` python
+
+# Pacotes
+import nltk
+import pandas as pd
+
+from corextopic import corextopic as ct
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
+
+# Caminho da planilha (abaixo, o exemplo)
+caminho = '' 
+
+# caminho = 'C://Users//Gloria//Documents//1 USP//IC//Modelagem//modelagem_class_objeto.xlsx'
+
+dataframe = pd.read_excel(caminho)
+#Colunas para textos de repercussão
+#nomes_colunas = ["Instituição", "Categoria", "Região", "UF", "ID", "Grupo", "Data_Criacao", "Líder", "2º_Líder", "Subarea_grupo", "Área_líder", "Repercussao" ]
+
+#Coluna para linhas de pesquisa
+#nomes_colunas = ["ID", "Categoria", "Grupo", "Área", "ID_Linha", "Linha","Q_Estudantes", "Q_Pesquisadores", "Subarea_Grupo", "Subarea_Lider", "Avaliação"]
+
+nomes_colunas = ["ID", "Grupo", "Linha_", "área", "class", "Lematização", "Corpus_FF", "Linha"]
+
+df = pd.read_excel(caminho, names=nomes_colunas)
+
+#dataframe = dataframe.loc[dataframe["Subarea_Grupo"] == 'Administração']
+
+df
+
+vectorizer = TfidfVectorizer(
+    max_df=.5,
+    min_df=2,
+    max_features=None,
+    ngram_range=(1, 2),
+    norm=None,
+    binary=True,
+    use_idf=False,
+    sublinear_tf=False
+)
+vectorizer = vectorizer.fit(df['Linha'])
+tfidf = vectorizer.transform(df['Linha'])
+vocab = vectorizer.get_feature_names_out()
+print(len(vocab))
+
+def calcular_termos_mais_comuns(dataframe, coluna, quantidade_top_n=20):
+    textos_concatenados = ' '.join(dataframe[coluna].astype(str).tolist())
+    vectorizer = CountVectorizer()
+    matriz_contagem = vectorizer.fit_transform([textos_concatenados])
+
+    termos = vectorizer.get_feature_names_out()
+    contagens = matriz_contagem.toarray().flatten()
+
+    df_termos = pd.DataFrame({'Termo': termos, 'Contagem': contagens})
+    termos_mais_comuns = df_termos.sort_values(by='Contagem', ascending=False).head(quantidade_top_n)
+
+    return termos_mais_comuns
+
+
+termos_comuns = calcular_termos_mais_comuns(df, 'Linha')
+print(termos_comuns)
+
+# Definir âncoras
+anchors = []
+model = ct.Corex(n_hidden=5, seed=42)
+model = model.fit(
+    tfidf,
+    words=vocab
+)
+
+# Modelagem sem âncoras.
+for i, topic_ngrams in enumerate(model.get_topics(n_words=10)):
+    topic_ngrams = [ngram[0] for ngram in topic_ngrams if ngram[1] > 0]
+    print("Tópico #{}: {}".format(i+1, ", ".join(topic_ngrams)))
+    
+anchors = [
+    ["desenvolvimento", "inovação"],
+    ["economia", "trabalho"],
+    ["instutuição"],
+    ["governo", "politica_publica"],
+    ["educação", "ensino"],
+]
+
+anchors = [
+    [a for a in topic if a in vocab]
+    for topic in anchors
+]
+
+model = ct.Corex(n_hidden=5, seed=42)
+model = model.fit(
+    tfidf,
+    words=vocab,
+    anchors=anchors,
+    anchor_strength=3
+    
+# Novamente, mas com âncoras agora
+for i, topic_ngrams in enumerate(model.get_topics(n_words=20)):
+    topic_ngrams = [ngram[0] for ngram in topic_ngrams if ngram[1] > 0]
+    print("Tópico #{}: {}".format(i+1, ", ".join(topic_ngrams)))
+```
+:::
+
+## Iramuteq
+
+Além da modelagem de tópicos, também mobilizamos o software francês *Interface de R pour les Analyses Multidimensionnelles de Textes et de Questionnaires* (**Iramuteq**).
+
+Essa ferramenta computacional, que não possui uso de IA, permite se aprofundar em algumas análises textuais, como veremos a seguir.
+
+O problema é que ele *não* é um software intuitivo e é de difícil manipulação. Também requer uma versão desatualizada do R para funcionar.
+
+## Iramuteq
+
+::: panel-tabset
+### Como usar?
+
+O *corpus* textual, como os textos de repertórios ou linhas de pesquisa, precisa ser organizado de uma forma específica:
+
+Quatro astericos (****) seguido dos valores de cada variável (público/privado, áreas, etc)
+
+### Exemplo com linhas de pesquisa
+
+![](IRAMUTEQ.png)
+:::
+
+# Etapa 4. Interpretação dos resultados
+
+## Panorama dos grupos de pesquisa sobre IA
+
+
+| Tópicos e termos associados |
+|-----------------------------|
+| **Tópico 1. Inovação e desenvolvimento**: sustentável, empreendedorismo, propriedade intelectual, saúde, indústria, ética, comunicação |
+| **Tópico 2. Economia e trabalho**: instituição, globalização, desenvolvimento, vigilância, governança, decolonial, startup |
+| **Tópico 3. Governo e políticas públicas**: economia, transparência, dados abertos, regulação, controle, gestão |
+| **Tópico 4. Educação e ensino**: educação, ensino, matemática |
+| **Tópico 5. Meio ambiente**: socioambiental, agronegócio, político, ética, conflito, transculturalidade, mercado |
+
+## Mapas...
+
+::: {.panel-tabset}
+### Plotagem
+
+![](distribuicao_grupos_pesquisa_Ciências_Humanas_brasil.png)
+
+![](distribuicao_grupos_pesquisa_Lingüística,_Letras_e_Artes_brasil.png)
+
+
+![](distribuicao_grupos_pesquisa_Ciências_Sociais_Aplicadas_brasil.png)
+
+
+
+### Código
+
+```{.python}
+# Biblioteca
+import pandas as pd
+
+# Banco de dados
+matrix = pd.read_csv('matrix')
+
+# Geração de estatística descritiva por estado
+frequencia_por_estado = matrix['UF'].value_counts().reset_index()
+frequencia_por_estado.columns = ['UF', 'Frequencia Absoluta']
+frequencia_por_estado['Percentual'] = (frequencia_por_estado['Frequencia Absoluta'] / frequencia_por_estado['Frequencia Absoluta'].sum()) * 100
+display(frequencia_por_estado)
+
+# Biblioteca de georreferenciamento
+import geopandas as gpd
+
+try:
+    # Using a different known good source for Brazilian state boundaries
+    brazil_states = gpd.read_file('https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/brazil-states.geojson')
+    display(brazil_states.head())
+    brazil_states.info()
+except Exception as e:
+    print(f"Could not load the GeoJSON file from the alternative source. Error: {e}")
+    brazil_states = None # Set to None if loading fails
+    
+brazil_states_merged = brazil_states.merge(frequencia_por_estado, left_on='sigla', right_on='UF', how='left')
+display(brazil_states_merged.head())
+
+# Plotagem
+ax = brazil_states_merged.plot(column='Percentual', cmap='OrRd', legend=True)
+
+for index, row in brazil_states_merged.iterrows():
+    centroid = row.geometry.centroid
+    plt.text(centroid.x, centroid.y, str(int(row['Frequencia Absoluta'])), fontsize=8, ha='center')
+
+plt.title("Distribuição de Grupos de Pesquisa em IA por Estado no Brasil")
+ax.set_axis_off()
+
+plt.savefig("distribuicao_grupos_pesquisa_IA_brasil.png", dpi=300, bbox_inches='tight')
+
+plt.show()
+
+```
+
+:::
+
+## Redes
+
+::: {.panel=tabset}
+
+### Plotagem
+
+![](redes.png)
+
+### Código 
+
+```{.python}
+import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
+
+# Carregar os dados
+df_relacional = pd.read_csv('matrix_relacionais')
+
+# Pré-processar os dados
+df_filtered = df_relacional[df_relacional['Pesquisadores'] != "Nenhum registro adicionado"]
+
+# Criar a rede bipartida
+G = nx.Graph()
+
+# Add nodes for groups (bipartite=0)
+group_nodes = df_filtered['ID'].unique()
+G.add_nodes_from(group_nodes, bipartite=0)
+
+# Add nodes for researchers (bipartite=1)
+researcher_nodes = df_filtered['Pesquisadores'].unique()
+G.add_nodes_from(researcher_nodes, bipartite=1)
+
+# Add edges between groups and researchers
+for index, row in df_filtered.iterrows():
+    group_id = row['ID']
+    researcher_name = row['Pesquisadores']
+    G.add_edge(group_id, researcher_name)
+
+# Visualizar a rede
+plt.rcParams['figure.figsize'] = (20, 15) # Increase figure size
+
+# Separate nodes by their bipartite attribute
+groups = {n for n, d in G.nodes(data=True) if d["bipartite"] == 0}
+researchers = set(G) - groups
+
+# Use a layout suitable for bipartite graphs
+pos = nx.spring_layout(G, k=0.5, iterations=50)
+
+plt.figure(figsize=(20, 15))
+
+# Draw the nodes with different colors and sizes
+nx.draw_networkx_nodes(G, pos, nodelist=list(groups), node_color="skyblue", node_size=100, label="Groups")
+nx.draw_networkx_nodes(G, pos, nodelist=list(researchers), node_color="salmon", node_size=10, label="Researchers")
+
+# Draw the edges
+nx.draw_networkx_edges(G, pos, width=0.5, alpha=0.5)
+
+plt.title("Bipartite Network of Research Groups and Researchers")
+plt.axis("off")
+plt.legend()
+plt.show()
+```
+
+:::
+
+## IA por área disciplinar
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](graph_simi_28.png)
+:::
+
+::: {.column width="50%"}
+![](graph_simi_24.png)
+:::
+
+::::
+
+## IA por área disciplinar {.incremental}
+
+- **Ciências Humanas**
+- **Ciências Sociais Aplicadas**
+- **Linguística, Letras e Artes**
+
+
+## IA pelos seus usos {.incremental}
+
+
+- **IA como objeto** 
+- **IA como técnica** 
+- **Tecnologias digitais** 
+
+# Etapa 5. Formas de publicizar os achados
+
+## Relatórios e divulgação científica
+
+Em geral, a pesquisa se encerra com a escrita do relatório, que nos permite desdobrar os achados em artigos, monografias, livros e outras formas de publicizar os resultados.
+
+Além de apresentações em seminários, uma dessas outras formas foi o [SCAI MAP](https://scaimap.org/), em parceria com a rede coordenada pela Prof. Veridiana D. Cordeiro,  [Understanding Artificial Intelligence](https://understandingai.iea.usp.br/).
+
+# Muito obrigado!
+
+Nossos e-mails:
+
+- carolinabueno@usp.br
+- guilherme.olimpio@usp.br
+- gmc2406@usp.br
+
+## Referências
+
+::: {#refs.bib}
+:::
+

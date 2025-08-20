@@ -1,0 +1,87 @@
+@article{omena2024,
+	title = {Quali-quanti visual methods and political bots},
+	volume = {6},
+	pages = {50--73},
+	number = {1},
+	journaltitle = {J. Digit. Social Res},
+	author = {Omena, Janna Joceli and Lobo, Thais and Tucci, Giulia and Bitencourt, Elias and de Keulenaar, Emillie and Kerche, Francisco W. and Chao, Jason and Liedtke, Marius and Li, Mengying and Luiza, Maria},
+	urldate = {2025-08-18},
+	date = {2024},
+}
+
+@book{boden1996,
+	title = {Artificial Intelligence},
+	abstract = {Artificial Intelligence is the study of how to build or program computers to enable them to do what minds can do. This volume discusses the ways in which computational ideas and computer modeling can aid our understanding of human and animal minds. Major theoretical approaches are outlined, as well as some promising recent developments. Fundamental philosophical questions are discussed along with topics such as: the differences between symbolic and connectionist {AI}, planning and problem solving, knowledge representation, learning, expert systems, vision, natural language, creativity, and human-computer interaction. This volume is suitable for any psychologist, philosopher, or computer scientist wanting to know the current state of the art in this area of cognitive science. - Up-to-date account of how computational ideas and techniques are relevant to psychology - Includes discussions of "classical" (symbolic) {AI}, of connectionism (neural nets), of evolutionary programming, and of A-Life - Discusses a wide range of psychology from low-level vision to creativity},
+	pagetotal = {395},
+	publisher = {Elsevier},
+	author = {Boden, Margaret A.},
+	date = {1996},
+	note = {Google-Books-{ID}: \_ixmRlL9jcIC},
+	keywords = {Computers / Artificial Intelligence / General, Computers / Human-Computer Interaction ({HCI})},
+}
+
+@article{cordeiro2023,
+	title = {A formação da sociologia digital: emergência de uma nova especialidade na sociologia ou um campo para repensar a própria sociologia?},
+	volume = {30},
+	rights = {Copyright (c) 2023 Política de direitos compartilhados},
+	issn = {2176-8099},
+	url = {https://revistas.usp.br/plural/article/view/211387},
+	doi = {10.11606/issn.2176-8099.pcso.2023.211387},
+	shorttitle = {A formação da sociologia digital},
+	abstract = {Apresentação do dossiê.},
+	pages = {5--22},
+	number = {1},
+	journaltitle = {Plural},
+	author = {Cordeiro, Veridiana Domingos and Gomes, Letícia Pereira Simões and Waizbort, Leopoldo Garcia Pinto},
+	urldate = {2025-08-18},
+	date = {2023-06-10},
+	langid = {portuguese},
+}
+
+@article{liu2021,
+  title={Sociological perspectives on artificial intelligence: A typological reading},
+  author={Liu, Zheng},
+  journal={Sociology Compass},
+  volume={15},
+  number={3},
+  pages={e12851},
+  year={2021},
+  publisher={Wiley Online Library}
+}
+
+@book{esposito2022,
+  title={Artificial communication: How algorithms produce social intelligence},
+  author={Esposito, Elena},
+  year={2022},
+  publisher={MIT Press}
+}
+
+@incollection{costa2021,
+	title = {Trajetória acadêmica da inteligência artificial no Brasil},
+	booktitle = {Inteligência artificial : avanços e tendências},
+	publisher = {Instituto Estudos Avançados},
+	author = {Costa, Anna Helena and Barros, Leliane Nunes de and Rezende, Solange Oliveira and Sichman, Jaime S. and Munhoz, Hugo Neri},
+	date = {2021},
+}
+
+@incollection{lemieux2015,
+	location = {Petrópolis},
+	title = {Problematizar},
+	abstract = {Apresenta a pesquisa sociológica sob seus diferentes aspectos, com uma preocupação de cobrir o conjunto das técnicas e dos métodos mais correntemente utilizados em sociologia.},
+	booktitle = {A pesquisa sociológica},
+	publisher = {Vozes},
+	author = {Lemieux, Cyril},
+	date = {2015},
+}
+
+@book{pasquinelli2023,
+  title={The Eye of the Master: A Social History of AI},
+  author={Pasquinelli, Matteo},
+  publisher={Verso},
+  year={2023}}
+
+@book{airoldi2021,
+  title = {Machine Habitus: Toward a Sociology of Algorithms},
+  author = {Airoldi, Massimo},
+  year = {2021},
+  publisher = {Polity}}
